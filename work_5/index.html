@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chuck Norris jokes</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<main>
+				<div class="header">
+					<div class="header-title">MSI 2020</div>
+					<a href="#" class="fav-btn"><img src="img/fav-btn-open.png" alt=""><span></span></a>
+					
+				</div>
+				<h1>Hey!</h1>
+				<h2>Let's try to find a joke for you: </h2>
+
+				<div class="radio-btn">
+					<input type="radio" id="r1" name="radio" value="random" checked>
+					<label for="r1">Random</label>
+				</div>
+				<div class="radio-btn">
+					<input type="radio" id="r2" name="radio" value="categories">
+					<label for="r2">From categories</label> 
+					<select name="" id="cat_select">
+						<option value="Choose a category" disabled>Choose a category</option>
+					</select>
+				</div>
+				<div class="radio-btn">
+					<input type="radio" id="r3" name="radio" value="search">
+					<label for="r3">Search</label> 
+					<input type="text" class="input_search" placeholder="Free text search...">
+				</div>
+				<button class="btn">Get a joke</button>
+				
+				<div class="card-wrapper"></div>
+			
+		</main>
+		<div class="overlay" id="overlay-modal"></div>
+		<aside >
+
+			<h3 class="subtitle"><img class="fav-btn-close" src="img/fav-btn-close.png" alt="">Favourites</h3>
+			<div class="favourites_jokes"></div>
+		</aside>
+	</div>
+	<script src='script2.js'></script>
+</body>
+</html>
